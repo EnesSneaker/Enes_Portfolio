@@ -1,19 +1,20 @@
-import React from "react"
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
 
 const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "Python" },
+  { skill: "Java" },
+  { skill: "Spring" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
-  { skill: "Git" },
+  { skill: "Material Ui" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
-]
+  { skill: "JUnit" },
+];
 
 const AboutSection = () => {
   return (
@@ -30,35 +31,33 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Enes and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              <span className="font-bold">{" driven"}</span> junior developer
+              based in Vienna.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              In the past, I had the privilege of playing professional football
+              and attending a commercial academy with a focus on business.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              However, I felt the need for a new challenge, leading me to embark
+              on an enriching 1-year journey as a Full Stack Developer. Starting
+              with JavaScript, I quickly progressed to mastering the MERN Stack
+              and integrating Java into my tech arsenal. Along the way, I gained
+              valuable experience with frameworks and libraries like Spring and
+              React, enhancing my problem-solving and coding skills.
             </p>
             <br />
             <p>
-              I believe that you should{" "}
-              <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              With an unwavering thirst for knowledge, I embrace every
+              opportunity to learn and grow. Adaptable and collaborative, I
+              thrive as a team player, leveraging my diverse background in
+              sports and business to contribute effectively in both professional
+              and personal endeavors.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -72,7 +71,7 @@ const AboutSection = () => {
                   >
                     {item.skill}
                   </p>
-                )
+                );
               })}
             </div>
             <Image
@@ -86,7 +85,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
