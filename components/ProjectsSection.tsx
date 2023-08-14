@@ -6,22 +6,25 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "ChatGpt4 Thoughts",
-    description: "ChatGpt4 blablablablablablablablablana.",
+    name: "ChatGpt4 OpenAi Key",
+    description:
+      "Elevate ad creation using ChatGPT's openApiKey. Craft engaging Facebook, Instagram, and more ads effortlessly. Choose prompts, collaborate with AI, and refine content easily. Revolutionize content creation today with ChatGPT4's AI-powered efficiency and creativity. ",
     image: "/ChatGpt4Fertig.png",
     github: "https://github.com/EnesSneaker/ChatGpt4",
     link: "",
   },
   {
     name: "Frontend Website",
-    description: "Frontendforntendoaodfs",
+    description:
+      "I crafted a website to showcase my uncle's premier lawn care company. Explore our dedication to cultivating vibrant landscapes. From design to digital, this platform mirrors our commitment to quality. Your ideal lawn, just a click away.",
     image: "/HuskoWebFertig.png",
     github: "https://github.com/EnesSneaker/lawn_care-Husk",
     link: "https://lawn-care-husk.vercel.app/",
   },
   {
     name: "Foodies",
-    description: "Foodies.",
+    description:
+      "A Social Media Haven for Cooks. Unleash your inner chef on our platform, where culinary enthusiasts unite. Seamlessly log in, share your unique recipes, and join a community passionate about flavors. From amateurs to seasoned pros, everyone has a seat at our virtual table. Let's savor creativity, together.",
     image: "/Foodies_Portfolio.png",
     github: "https://github.com/EnesSneaker/Foodies",
     link: "",
