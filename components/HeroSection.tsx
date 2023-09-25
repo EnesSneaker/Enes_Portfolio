@@ -6,6 +6,15 @@ import { Link as ScrollLink } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId) => {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-5 md:my-1 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
@@ -30,30 +39,21 @@ const HeroSection = () => {
             based in Vienna. Working towards creating software that makes life
             easier and more meaningful.
           </p>
-          <ScrollLink
-            to="projects"
+          <button
+            onClick={() => scrollToSection("projects")}
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
           >
             Projects
-          </ScrollLink>
+          </button>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center cursor-pointer">
-        <ScrollLink
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
+        <button
+          onClick={() => scrollToSection("about")}
+          className="text-neutral-100 font-semibold bg-transparent border border-neutral-100 px-4 py-2 rounded-full hover:bg-teal-600 hover:text-white"
         >
           <HiArrowDown size={35} className="animate-bounce" />
-        </ScrollLink>
+        </button>
       </div>
     </section>
   );
