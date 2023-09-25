@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 //import Link from "next/link";
-import { Link } from "react-scroll/modules";
+import { Link as ScrollLink } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
             based in Vienna. Working towards creating software that makes life
             easier and more meaningful.
           </p>
-          <Link
+          <ScrollLink
             to="projects"
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer"
             activeClass="active"
@@ -40,11 +40,11 @@ const HeroSection = () => {
             duration={500}
           >
             Projects
-          </Link>
+          </ScrollLink>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center cursor-pointer">
-        <Link
+        <ScrollLink
           to="about"
           activeClass="active"
           spy={true}
@@ -53,7 +53,7 @@ const HeroSection = () => {
           duration={500}
         >
           <HiArrowDown size={35} className="animate-bounce" />
-        </Link>
+        </ScrollLink>
       </div>
     </section>
   );
