@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
       targetSection.scrollIntoView({
