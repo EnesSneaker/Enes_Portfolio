@@ -25,7 +25,7 @@ const projects = [
     name: "Foodies",
     description:
       "A Social Media Haven for Cooks. Unleash your inner chef on our platform, where culinary enthusiasts unite. Seamlessly log in, share your unique recipes, and join a community passionate about flavors. From amateurs to seasoned pros, everyone has a seat at our virtual table. Let's savor creativity, together.",
-    image: "/Foodies_Portfolio.png",
+    image: "/Foodies_LandingPage2.png",
     github: "https://github.com/EnesSneaker/Foodies",
     link: "",
   },
